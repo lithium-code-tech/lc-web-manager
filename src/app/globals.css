@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Mesmas cores do app SkateGo (skatego-rn/src/shared/theme.ts). */
+@theme {
+  --color-bg: #0f0f0f;
+  --color-surface: #1a1a1a;
+  --color-surface-2: #242424;
+  --color-line: #333333;
+  --color-ink: #f5f3f0;
+  --color-muted: #a8a6a2;
+  --color-brand: #ff5a2c;
+  --color-brand-dark: #e14a1f;
+  --color-brand-soft: rgba(255, 90, 44, 0.16);
+  --color-ok: #3ecf8e;
+  --color-ok-soft: rgba(62, 207, 142, 0.14);
+  --color-warn: #f5b84b;
+  --color-warn-soft: rgba(245, 184, 75, 0.14);
+  --color-danger: #ff6b6b;
+  --color-danger-soft: rgba(255, 107, 107, 0.14);
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-marker), cursive;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
